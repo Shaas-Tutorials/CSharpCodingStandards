@@ -70,3 +70,40 @@ Note that the design guidelines refer to "PascalCasing." This is also referred t
 1. Do not use the same name for a namespace and a type within that namespace.
 1. Within an assembly, try to keep all namespaces as refinements on the assembly name (with `Logility` in front). For example, the assembly `Voyager.IO.Core` could contain the `Logility.Voyager.IO.Core.Configuration` namespace but shouldn't contain a `Logility.Voyager.Core.Security` namespace.
 
+## Classes, Structs, and Interfaces
+
+1. Name classes and structs with nouns or noun phrases.
+1. Name interfaces with adjective phrases when possible, although noun or noun phrases are acceptable.
+1. Prefix interfaces with the letter I and use PascalCase for the portion after the I. For example, `IPascalCaseable`
+
+See https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces for further details, especially on naming common types (attributes, exceptions), generic type parameters, and enumerations.
+
+## Type Members
+
+### Methods
+
+1. As methods are actions, use verb or verb phrases for methods when possible, in order to help distinguish them from properties.
+
+Remember also the other guidelines about keeping names naturally readable, so prefer `ValidatePassword` over `PasswordValidate`.
+
+### Properties
+
+1. Use noun or noun phrases for properties.
+1. For collections, use a plural phrase rather than appending the word List or Collection. For example, prefer `Locations` over `LocationList`.
+1. Use affirmative phrasing for boolean properties. For example, prefer `CanRead` instead of `CannotRead` (which will just lead to confusion).
+
+### Fields
+
+Fields include public and protected fields that behave somewhat like properties (just with getter/setter implementations), as well as private fields, also known sometimes as class variables.
+
+1. For public and protected fields, use the naming guidelines for Properties.
+1. For private fields, use camelCasing with an underscore prefix. For example:
+ ````csharp
+ private int _locationId;
+ ````
+1. Private fields should have semantically meaningful names, just like all public/protected members.
+
+## Parameters
+
+1. Use descriptive parameter names. For example, prefer `index` over `i`. An exception is when the parameter name is redundant to the name of the method. For example, prefer `GetValueAtIndex(int i)` over `GetValueAtIndex(int index)`.
+
