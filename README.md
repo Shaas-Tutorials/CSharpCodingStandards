@@ -11,3 +11,4 @@ The standards specified below summarize the detailed Microsoft design guidelines
 ## Table of Contents
 
 1. [Naming Conventions](naming.md)
+1. [Layout Conventions](layout.md)
