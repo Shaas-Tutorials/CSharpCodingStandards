@@ -40,8 +40,9 @@ Note that the design guidelines refer to "PascalCasing." This is also referred t
 ## Word Choice
 
 1. Choose names that read naturally in English.
-1. Do not use underscores, hyphens, or other non-alphanumeric characters, especially to separate words. Prefer `TextAlginment` rather than `text-alginment`.
+1. Do not use underscores, hyphens, or other non-alphanumeric characters, especially to separate words. Prefer `TextAlignment` rather than `text-alignment`.
 1. Do not use Hungarian notation or its variants.
+1. Use semantically meaningful names rather than including a type in the name, except when the type is integral to the meaning of the method. For example, `GetLength` is preferred for the length of a string, whereas `GetInt32` can be used when fetching an integer type from a data reader.
 1. Avoid using names that are keywords in C# or VB.Net.
 1. Try to avoid using names that conflict with .NET public names, such as `Exception`
 
@@ -59,4 +60,13 @@ Note that the design guidelines refer to "PascalCasing." This is also referred t
 1. EXE file names that are not run from a command line or batch file should be named the same as the assembly. This includes executables that get launched from our code or via COM instantiation. For example:
  - `Voyager.Ito.Platform.ProcessorHost.exe`
 
+## Namespaces
+
+1. Namespaces should be of the form: `Logility.Voyager.Prod.Abc.Etc` where `Prod` is the product acronym, and `Abc.Etc` are specific to the product. For example:
+ ````csharp
+ namespace Logility.Voyager.IO.Core.Configuration { }
+ namespace Logility.Voyager.Core.Security { }
+ ````
+1. Do not use the same name for a namespace and a type within that namespace.
+1. Within an assembly, try to keep all namespaces as refinements on the assembly name (with `Logility` in front). For example, the assembly `Voyager.IO.Core` could contain the `Logility.Voyager.IO.Core.Configuration` namespace but shouldn't contain a `Logility.Voyager.Core.Security` namespace.
 
