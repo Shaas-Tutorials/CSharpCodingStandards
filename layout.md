@@ -1,3 +1,5 @@
+(Back)[README.md]
+
 # Layout
 
 ## Folder Layout
@@ -62,6 +64,15 @@ The use of "class" below refers to both class and structures, when appropriate f
 ## Code Styling and White Space
 
 Preferred settings in the Visual Studio 2017 Text Editor (C#) settings dialog.
+
+Summary of the styling guidelines:
+
+* Use tabs rather than spaces.
+* Open braces go on statement or type declaration line, not on their own line.
+* Do not use var when the type is explicit or obvious.
+* Do not use "this."
+* Do use intrinsic language types like `int` instead of Framework types like `Int32`.
+* Do use modern C# language features when possible (e.g., expression body, coalesce operator, etc.).
 
 ### Tabs
 
