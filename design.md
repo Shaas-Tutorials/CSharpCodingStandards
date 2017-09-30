@@ -1,4 +1,4 @@
-(Back)[README.md]
+[Back](README.md)
 
 # Design Principles
 
@@ -30,5 +30,5 @@ See https://en.wikipedia.org/wiki/Single_responsibility_principle for more infor
 
 Dark patterns are behaviors or artifacts that include undesirable behavior. I.e., don't do these things.
 
-* (Cargo cult programming)[https://en.wikipedia.org/wiki/Cargo_cult_programming] - Ritual use of code without purpose or properly knowing its purpose.
-* (Copy paste programming)[https://en.wikipedia.org/wiki/Copy_and_paste_programming] - Copying code from elsewhere, resulting in higher maintenance effort and larger code base.
+* [Cargo cult programming](https://en.wikipedia.org/wiki/Cargo_cult_programming) - Ritual use of code without purpose or properly knowing its purpose.
+* [Copy paste programming](https://en.wikipedia.org/wiki/Copy_and_paste_programming) - Copying code from elsewhere, resulting in higher maintenance effort and larger code base.
