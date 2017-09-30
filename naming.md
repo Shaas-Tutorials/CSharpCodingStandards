@@ -34,7 +34,7 @@ Note that the design guidelines refer to "PascalCasing." This is also referred t
 1. Do not use Hungarian notation or its variants.
 1. Use semantically meaningful names rather than including a type in the name, except when the type is integral to the meaning of the method. For example, `GetLength` is preferred for the length of a string, whereas `GetInt32` can be used when fetching an integer type from a data reader.
 1. Avoid using names that are keywords in C# or VB.Net.
-1. Try to avoid using names that conflict with .NET public names, such as `Exception`
+1. Try to avoid using names that conflict with .NET public names, such as `Exception`.
 
 ## Assemblies and Binaries
 
@@ -95,4 +95,4 @@ Fields include public and protected fields that behave somewhat like properties 
 
 ## Parameters
 
-1. Use descriptive parameter names. For example, prefer `index` over `i`. An exception is when the parameter name is redundant to the name of the method. For example, prefer `GetValueAtIndex(int i)` over `GetValueAtIndex(int index)`.
+1. Use descriptive parameter names. For example, prefer `index` over `i`. An exception is when the parameter name is redundant to the name of the method. For example, `GetValueAtIndex(int i)` is acceptable as the parameter `i` is clearly the index referred to in the name.
