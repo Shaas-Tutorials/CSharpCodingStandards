@@ -60,6 +60,15 @@ The use of "class" below refers to both class and structures, when appropriate f
   // Calculates cumulative normal distribution function.
   ```
 4. Do not create ASCII boxes of asterisks or other characters around comments.
+5. Do use `//` style comments for all commenting. Reserve use of `/* */` style comments for commenting out blocks of code.
+6. Consider adding the following region at the top of source files:
+    ```csharp
+    #region Copyright (c) Logility. All rights reserved.
+    #endregion
+    ```
+    Any additional copyright notices required (such as use of third-party code embedded directly into your code) can be placed as a comment inside that region.
+7. Do use `///` auto-documentation comments for public types (classes, interfaces, structs, enums) and for public and protected type members (methods, fields, properties, events, etc.). DOcumentation style should generally match that of the .NET Framework documentation.
+8. Consider using `///` auto-documentation comments for internal types and for private type members, too.
 
 ## Code Styling and White Space
 
