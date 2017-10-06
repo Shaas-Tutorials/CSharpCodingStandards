@@ -4,9 +4,9 @@
 
 ## Capitalization
 
-Note that the design guidelines refer to "PascalCasing." This is also referred to as "TitleCasing," as distigusihed from "camcelCasing."
+Note that the design guidelines refer to "PascalCasing." This is also referred to as "TitleCasing," as distinguished from "camelCasing."
 
-1. Use the table below as a guideline for when to use PascalCasing and when to use camcelCasing.
+1. Use the table below as a guideline for when to use PascalCasing and when to use camelCasing.
 
  Identifier | Casing
  ---------- | ------
