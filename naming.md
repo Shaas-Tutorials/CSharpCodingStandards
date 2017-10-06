@@ -33,7 +33,9 @@ Note that the design guidelines refer to "PascalCasing." This is also referred t
 
 1. Choose names that read naturally in English.
 1. Do not use underscores, hyphens, or other non-alphanumeric characters, especially to separate words. Prefer `TextAlignment` rather than `text-alignment`.
-1. Do not use Hungarian notation or its variants.
+1. Do not use Hungarian notation or its variants to indicate the intrinsic type of an element. Exceptions to this rule include:
+    1. Prefixing interfaces with "I"
+    1. Using approved web prefixes for controls, such as "btn" for buttons.
 1. Use semantically meaningful names rather than including a type in the name, except when the type is integral to the meaning of the method. For example, `GetLength` is preferred for the length of a string, whereas `GetInt32` can be used when fetching an integer type from a data reader.
 1. Avoid using names that are keywords in C# or VB.Net.
 1. Try to avoid using names that conflict with .NET public names, such as `Exception`.
